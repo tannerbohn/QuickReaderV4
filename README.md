@@ -14,3 +14,9 @@ When using the program, the following operations are available:
 * length (slider): this changes how many sentences are extracted for the summary. When set to 0, the entire document is shown.
 * coherence (slider): this changes the weight of coherence (i.e. how important it is for consecutive sentences in the summary to be related)
 * independence (slider): this changes the weight of independence (i.e. how important it is to include sentences in the summary that introduce new content/do not depend on previous sentences for comprehension)
+
+## Dependencies
+This project is written in Python2.7 with Tkinter for the GUI. It requires the following non-default libraries:
+* nltk
+* numpy, scipy
+* ScrolledText
