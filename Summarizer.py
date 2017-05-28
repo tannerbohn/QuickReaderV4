@@ -1,7 +1,7 @@
 from __future__ import print_function
 
 import nltk.data
-import cPickle as pickle
+import pickle
 import random
 import copy
 import numpy as np

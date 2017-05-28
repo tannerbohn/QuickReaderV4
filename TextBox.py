@@ -21,6 +21,7 @@ class TextBox:
 		self.FONT = "helvetica"
 		self.FONT_SIZE = 12
 
+		# colours specified as RGB fractions
 		self.bg_input = [1,1,1]
 		self.fg_input = [0,0,0]
 
