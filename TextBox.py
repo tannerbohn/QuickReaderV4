@@ -6,6 +6,11 @@ from ScrolledText import ScrolledText
 import random
 from Summarizer import *
 
+# todo: TextBox.articleColour() could use a careful look at...
+#       it seems to sometimes miss non-alphanum characters
+#       and has trouble when there is more than one exact copy
+#       of a summary sentence
+
 class TextBox:
 
 
@@ -14,6 +19,7 @@ class TextBox:
 		self.WIDTH = 600
 		self.HEIGHT = 800
 		self.FONT = "helvetica"
+		self.FONT_SIZE = 12
 
 		self.bg_input = [1,1,1]
 		self.fg_input = [0,0,0]
@@ -378,7 +384,7 @@ class TextBox:
 			#print("- ", s)
 
 			tagNameA = ''.join([random.choice('abcdefghijklmnopqrstuvwxyz') for _ in range(10)])
-			L_Size = 12 # if solution[i] == 1 else 10
+			L_Size = self.FONT_SIZE # if solution[i] == 1 else 10
 
 			L_Colour = self.fg_solution_article if solution[i] == 1 else self.fg_min_article
 			#print("\t", L_Colour)
