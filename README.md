@@ -1,6 +1,9 @@
 # QuickReaderV4
 A text summarisation algorithm and interface
 
+![screenshot](https://github.com/tannerbohn/QuickReaderV4/blob/master/screenshot.png)
+
+
 ## Usage
 To run the code, `python main.py`. When you find an article or document to summarize, copy the text, paste it into the white box at the bottom of the interface, and press enter.
 
